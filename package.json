@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "portfolio",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "description": "its a portfolio of works",
+  "keywords": "portfolio",
   "license": "",
-  "author": "",
+  "author": "Adrian Ghatavi",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
