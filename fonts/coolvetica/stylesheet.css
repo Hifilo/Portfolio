@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Coolvetica Crammed Rg';
+    src: url('fonts/hinted-CoolveticaCrammedRg-Regular.eot');
+    src: local('CoolveticaCrammedRg-Regular'),
+        url('fonts/hinted-CoolveticaCrammedRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/hinted-CoolveticaCrammedRg-Regular.woff2') format('woff2'),
+        url('fonts/hinted-CoolveticaCrammedRg-Regular.woff') format('woff'),
+        url('fonts/hinted-CoolveticaCrammedRg-Regular.ttf') format('truetype'),
+        url('fonts/hinted-CoolveticaCrammedRg-Regular.svg#CoolveticaCrammedRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('fonts/hinted-CoolveticaRg-Italic.eot');
+    src: local('CoolveticaRg-Italic'),
+        url('fonts/hinted-CoolveticaRg-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/hinted-CoolveticaRg-Italic.woff2') format('woff2'),
+        url('fonts/hinted-CoolveticaRg-Italic.woff') format('woff'),
+        url('fonts/hinted-CoolveticaRg-Italic.ttf') format('truetype'),
+        url('fonts/hinted-CoolveticaRg-Italic.svg#CoolveticaRg-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('fonts/hinted-CoolveticaRg-Regular.eot');
+    src: local('CoolveticaRg-Regular'),
+        url('fonts/hinted-CoolveticaRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/hinted-CoolveticaRg-Regular.woff2') format('woff2'),
+        url('fonts/hinted-CoolveticaRg-Regular.woff') format('woff'),
+        url('fonts/hinted-CoolveticaRg-Regular.ttf') format('truetype'),
+        url('fonts/hinted-CoolveticaRg-Regular.svg#CoolveticaRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Compressed Hv';
+    src: url('fonts/hinted-CoolveticaCompressedHv-Regular.eot');
+    src: local('CoolveticaCompressedHv-Regular'),
+        url('fonts/hinted-CoolveticaCompressedHv-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/hinted-CoolveticaCompressedHv-Regular.woff2') format('woff2'),
+        url('fonts/hinted-CoolveticaCompressedHv-Regular.woff') format('woff'),
+        url('fonts/hinted-CoolveticaCompressedHv-Regular.ttf') format('truetype'),
+        url('fonts/hinted-CoolveticaCompressedHv-Regular.svg#CoolveticaCompressedHv-Regular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Condensed Rg';
+    src: url('fonts/hinted-CoolveticaCondensedRg-Regular.eot');
+    src: local('CoolveticaCondensedRg-Regular'),
+        url('fonts/hinted-CoolveticaCondensedRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/hinted-CoolveticaCondensedRg-Regular.woff2') format('woff2'),
+        url('fonts/hinted-CoolveticaCondensedRg-Regular.woff') format('woff'),
+        url('fonts/hinted-CoolveticaCondensedRg-Regular.ttf') format('truetype'),
+        url('fonts/hinted-CoolveticaCondensedRg-Regular.svg#CoolveticaCondensedRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
