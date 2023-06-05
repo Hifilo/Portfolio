@@ -1,194 +1,194 @@
 /* fredoka-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fredoka";
+  font-family: 'Fredoka';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/fredoka-v9-latin-300.eot"); /* IE9 Compat Modes */
+  src: url( '../fonts/fredoka-v9-latin-300.eot' ); /* IE9 Compat Modes */
   src:
-    url("../fonts/fredoka-v9-latin-300.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/fredoka-v9-latin-300.woff2") format("woff2"),
-    url("../fonts/fredoka-v9-latin-300.woff")
-    format("woff"),
-    url("../fonts    ka-v9-latin-300.ttf")
-    format("truetype"),
-    url("../fonts/fredoka-v9-latin    vg#Fredoka")
-    format("svg"); /* Legacy iOS */
+    url( '../fonts/fredoka-v9-latin-300.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/fredoka-v9-latin-300.woff2' ) format( 'woff2' ),
+    url( '../fonts/fredoka-v9-latin-300.woff' )
+    format( 'woff' ),
+    url( '../fonts    ka-v9-latin-300.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/fredoka-v9-latin    vg#Fredoka' )
+    format( 'svg' ); /* Legacy iOS */
 }
 
 /* fredoka-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fredoka";
+  font-family: 'Fredoka';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/fredoka-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url( '../fonts/fredoka-v9-latin-regular.eot' ); /* IE9 Compat Modes */
   src:
-    url("../fonts/fredoka-v9-latin-regular.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/fredoka-v9-latin-regular.woff2") format("woff2"),
-    url("../fonts/fredoka-v9-latin-regular.woff")
-    format("woff"),
-    url("../fonts    ka-v9-latin-regular.ttf")
-    format("truetype"),
-    url("../fonts/fredoka-v9    -regular.svg#Fredoka") format("svg"); /* Legacy iOS */
+    url( '../fonts/fredoka-v9-latin-regular.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/fredoka-v9-latin-regular.woff2' ) format( 'woff2' ),
+    url( '../fonts/fredoka-v9-latin-regular.woff' )
+    format( 'woff' ),
+    url( '../fonts    ka-v9-latin-regular.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/fredoka-v9    -regular.svg#Fredoka' ) format( 'svg' ); /* Legacy iOS */
 }
 
 /* fredoka-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fredoka";
+  font-family: 'Fredoka';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/fredoka-v9-latin-500.eot"); /* IE9 Compat Modes */
+  src: url( '../fonts/fredoka-v9-latin-500.eot' ); /* IE9 Compat Modes */
   src:
-    url("../fonts/fredoka-v9-latin-500.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/fredoka-v9-latin-500.woff2") format("woff2"),
-    url("../fonts/fredoka-v9-latin-500.woff")
-    format("woff"),
-    url("../fonts    ka-v9-latin-500.ttf")
-    format("truetype"),
-    url("../fonts/fredoka-v9-latin    vg#Fredoka")
-    format("svg"); /* Legacy iOS */
+    url( '../fonts/fredoka-v9-latin-500.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/fredoka-v9-latin-500.woff2' ) format( 'woff2' ),
+    url( '../fonts/fredoka-v9-latin-500.woff' )
+    format( 'woff' ),
+    url( '../fonts    ka-v9-latin-500.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/fredoka-v9-latin    vg#Fredoka' )
+    format( 'svg' ); /* Legacy iOS */
 }
 
 /* fredoka-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fredoka";
+  font-family: 'Fredoka';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/fredoka-v9-latin-600.eot"); /* IE9 Compat Modes */
+  src: url( '../fonts/fredoka-v9-latin-600.eot' ); /* IE9 Compat Modes */
   src:
-    url("../fonts/fredoka-v9-latin-600.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/fredoka-v9-latin-600.woff2") format("woff2"),
-    url("../fonts/fredoka-v9-latin-600.woff")
-    format("woff"),
-    url("../fonts    ka-v9-latin-600.ttf")
-    format("truetype"),
-    url("../fonts/fredoka-v9-latin    vg#Fredoka")
-    format("svg"); /* Legacy iOS */
+    url( '../fonts/fredoka-v9-latin-600.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/fredoka-v9-latin-600.woff2' ) format( 'woff2' ),
+    url( '../fonts/fredoka-v9-latin-600.woff' )
+    format( 'woff' ),
+    url( '../fonts    ka-v9-latin-600.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/fredoka-v9-latin    vg#Fredoka' )
+    format( 'svg' ); /* Legacy iOS */
 }
 
 /* fredoka-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Fredoka";
+  font-family: 'Fredoka';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/fredoka-v9-latin-700.eot"); /* IE9 Compat Modes */
+  src: url( '../fonts/fredoka-v9-latin-700.eot' ); /* IE9 Compat Modes */
   src:
-    url("../fonts/fredoka-v9-latin-700.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/fredoka-v9-latin-700.woff2") format("woff2"),
-    url("../fonts/fredoka-v9-latin-700.woff")
-    format("woff"),
-    url("../fonts    ka-v9-latin-700.ttf")
-    format("truetype"),
-    url("../fonts/fredoka-v9-latin    vg#Fredoka")
-    format("svg"); /* Legacy iOS */
+    url( '../fonts/fredoka-v9-latin-700.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/fredoka-v9-latin-700.woff2' ) format( 'woff2' ),
+    url( '../fonts/fredoka-v9-latin-700.woff' )
+    format( 'woff' ),
+    url( '../fonts    ka-v9-latin-700.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/fredoka-v9-latin    vg#Fredoka' )
+    format( 'svg' ); /* Legacy iOS */
 }
 
 /* Coolvetica Display Font */
 @font-face {
-  font-family: "Coolvetica Crammed Rg";
+  font-family: 'Coolvetica Crammed Rg';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.eot");
+  src: url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.eot' );
   src:
-    local("CoolveticaCrammedRg-Regular"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.woff2")
-    format("woff2"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.woff")
-    format("woff"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.ttf")
-    format("truetype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.svg#CoolveticaCrammedRg-Regular")
-    format("svg");
+    local( 'CoolveticaCrammedRg-Regular' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.woff2' )
+    format( 'woff2' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.woff' )
+    format( 'woff' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCrammedRg-Regular.svg#CoolveticaCrammedRg-Regular' )
+    format( 'svg' );
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Coolvetica Rg";
+  font-family: 'Coolvetica Rg';
   font-style: italic;
   font-weight: normal;
-  src: url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.eot");
+  src: url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.eot' );
   src:
-    local("CoolveticaRg-Italic"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.woff2")
-    format("woff2"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.woff")
-    format("woff"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.ttf")
-    format("truetype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.svg#CoolveticaRg-Italic")
-    format("svg");
+    local( 'CoolveticaRg-Italic' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.woff2' )
+    format( 'woff2' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.woff' )
+    format( 'woff' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Italic.svg#CoolveticaRg-Italic' )
+    format( 'svg' );
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Coolvetica Rg";
+  font-family: 'Coolvetica Rg';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.eot");
+  src: url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.eot' );
   src:
-    local("CoolveticaRg-Regular"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.woff2")
-    format("woff2"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.woff")
-    format("woff"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.ttf")
-    format("truetype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.svg#CoolveticaRg-Regular")
-    format("svg");
+    local( 'CoolveticaRg-Regular' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.woff2' )
+    format( 'woff2' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.woff' )
+    format( 'woff' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaRg-Regular.svg#CoolveticaRg-Regular' )
+    format( 'svg' );
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Coolvetica Compressed Hv";
+  font-family: 'Coolvetica Compressed Hv';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.eot");
+  src: url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.eot' );
   src:
-    local("CoolveticaCompressedHv-Regular"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.woff2")
-    format("woff2"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.woff")
-    format("woff"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.ttf")
-    format("truetype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.svg#CoolveticaCompressedHv-Regular")
-    format("svg");
+    local( 'CoolveticaCompressedHv-Regular' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.woff2' )
+    format( 'woff2' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.woff' )
+    format( 'woff' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCompressedHv-Regular.svg#CoolveticaCompressedHv-Regular' )
+    format( 'svg' );
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Coolvetica Condensed Rg";
+  font-family: 'Coolvetica Condensed Rg';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.eot");
+  src: url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.eot' );
   src:
-    local("CoolveticaCondensedRg-Regular"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.eot?#iefix")
-    format("embedded-opentype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.woff2")
-    format("woff2"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.woff")
-    format("woff"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.ttf")
-    format("truetype"),
-    url("../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.svg#CoolveticaCondensedRg-Regular")
-    format("svg");
+    local( 'CoolveticaCondensedRg-Regular' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.eot?#iefix' )
+    format( 'embedded-opentype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.woff2' )
+    format( 'woff2' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.woff' )
+    format( 'woff' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.ttf' )
+    format( 'truetype' ),
+    url( '../fonts/coolvetica/fonts/hinted-CoolveticaCondensedRg-Regular.svg#CoolveticaCondensedRg-Regular' )
+    format( 'svg' );
   font-display: swap;
 }

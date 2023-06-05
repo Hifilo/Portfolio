@@ -1,0 +1,95 @@
+:root {
+    /* fonts */
+    --fallback-fonts:
+        'fredoka'
+        system-ui,
+        -apple-system,
+        blinkmacsystemfont,
+        'segoe UI',
+        roboto,
+        oxygen,
+        ubuntu,
+        cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+    --paragraph-font-normal:
+        normal normal 400 normal medium / normal 'Fredoka',
+        sans-serif;
+
+    --paragraph-font-small:
+        normal normal 400 normal small / normal 'Fredoka',
+        sans-serif;
+
+    --paragraph-font-bold:
+        normal normal 600 normal medium / normal 'Fredoka',
+        sans-serif;
+
+    --display-font-large:
+        normal normal 600 expanded 36px / normal 'Coolvetica Rg',
+        var( --fallback-fonts );
+
+    --display-font-h3: normal normal 500 expanded x-large / normal 'Coolvetica Rg',;
+
+    --color-primary: #2c5282;
+
+    --color-secondary: #c2d4ea;
+
+    --color-style-green: #cdee70;
+
+    --color-style-whitebg: #faffff;
+
+    --color-style-lightbluebg: #ccfff8;
+
+    --color-style-red: #ff7676;
+
+    --color-style-aqua: rgb( 98 240 185 );
+
+    --color-style-gray-purple: #271d91;
+
+    --color-style-dark-purple: #1f055c;
+
+    --color-style-light-purple: #9173da;
+
+
+    /* shadows  */
+    --box-shadow-button:
+        rgb( 45 35 66 / 40% ) 0 2px 4px,
+        rgb( 45 35 66 / 30% ) 0 7px 13px -3px,
+        rgb( 58 65 111 / 50% ) 0 -3px 0 inset;
+
+    --box-shadow-2:
+        inset 0px -3px 23px -9px rgb( 255 118 118 / 50% ),
+        0px 3px 13px -3px rgb( 39 29 145 / 50% );
+
+    --box-shadow-generic: 0px 3px 13px -3px rgb( 39 29 145 / 50% );
+
+    --box-shadow-3:
+        0px -3px 2px inset rgb( 255 118 118 / 50% ),
+        0px 7px 13px -3px rgb( 39 29 145 / 50% );
+
+    --box-shadow-4:
+        8px 0px 0 inset rgb( 255 118 118 / 50% ),
+        0px 7px 13px -3px rgb( 39 29 145 / 50% );
+
+
+    --button-focus-shadow:
+        #3c4fe0 0 0 0 1.5px inset,
+        rgb( 45 35 66 / 40% ) 0 2px 4px,
+        rgb( 45 35 66 / 30% ) 0 7px 13px -3px,
+        #3c4fe0 0 -3px 0 inset;
+
+    --box-shadow-button-new-hover:
+        -15px -15px 30px 0 #fff,
+        15px 15px 30px 0 #1d0dca17;
+
+    --box-shadow-button-new:
+        -10px -10px 30px 0 #fff,
+        10px 10px 30px 0 #1d0dca17;
+
+    /*  gradients */
+    --radial-gradient-1: radial-gradient( 100% 100% at 100% 0, var( --color-style-red ) 0%, var( --color-style-green ) 100% );
+
+    --linear-gradient-1: linear-gradient( 100% 100% at 100% 0, var( --color-style-red ) 0%, var( --color-style-green ) 100% );
+}
