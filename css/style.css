@@ -77,16 +77,16 @@ div .code .h-flex {
 
 /* #F5F5FA */
 .name {
-    grid-area: 1122;
+    grid-area: 1/1/2/2;
 }
 
 .info1 {
-    grid-area: 1234;
+    grid-area: 1/2/3/4;
 }
 
 
 .titles {
-    grid-area: 2132;
+    grid-area: 2/1/3/2;
 }
 
 /* Font, and text stylings */
@@ -159,7 +159,7 @@ a {
     max-width: 100vw;
     margin: 10px 80px;
     padding: 1em;
-    box-shadow: 0 2px 8px 0 rgb( 0 0 0  15% );
+    box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% );
 }
 
 
@@ -380,11 +380,11 @@ a {
 
 @keyframes pulse {
     from {
-        box-shadow: 0 0 0 0 rgb(3 149 229  40%);
+        box-shadow: 0 0 0 0 rgb(3 149 229 / 40%);
     }
 
     to {
-        box-shadow: 0 0 0 45px rgb(3 149 229  0%);
+        box-shadow: 0 0 0 45px rgb(3 149 229 / 0%);
     }
 }
 
@@ -400,7 +400,7 @@ a {
     text-align: justify;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 5px 5px rgb(0 0 0  10%);
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
     cursor: auto;
     user-select: text;
 }
@@ -454,7 +454,7 @@ a {
     transition-delay: 0.8s;
     content: '';
     inset: 0;
-    mask-image: radial-gradient(rgb(0 0 0  100%) 20%, transparent 70%);
+    mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
 }
 
 
@@ -474,7 +474,7 @@ a {
     backdrop-filter: grayscale(60) blur(5px);
     transition: inset 1s ease-in-out;
     content: '';
-    mask-image: radial-gradient(rgb(0 0 0  100%) 30%, transparent 70%);
+    mask-image: radial-gradient(rgb(0 0 0 / 100%) 30%, transparent 70%);
     inset: -60vw;
 }
 
@@ -504,7 +504,7 @@ a {
 }
 
 .action ul li:not(:last-child) {
-    border-bottom: 1px solid rgb(0 0 0  10%);
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 .action ul li iconify-icon {
@@ -540,7 +540,7 @@ a {
 }
 
 .action ul a:not(:last-child) {
-    border-bottom: 1px solid rgb(0 0 0  10%);
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 .action ul li div {
@@ -573,7 +573,7 @@ a {
 }
 
 .action ul li div:not(:last-child) {
-    border-bottom: 1px solid rgb(0 0 0  10%);
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 .action h1,
@@ -600,4 +600,3 @@ h6 {
 .action ul a:hover h6 {
     color: var(--color-style-dark-purple);
 }
-
