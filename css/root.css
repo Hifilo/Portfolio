@@ -60,7 +60,7 @@
         rgb( 58 65 111 / 50% ) 0 -3px 0 inset;
 
     --box-shadow-2:
-        inset 0px -3px 23px -9px rgb( 255 118 118 / 50% ),
+        inset 0px -3px 23px -9px rgb(150 251 255 / 50%),
         0px 3px 13px -3px rgb( 39 29 145 / 50% );
 
     --box-shadow-generic: 0px 3px 13px -3px rgb( 39 29 145 / 50% );
@@ -70,8 +70,19 @@
         0px 7px 13px -3px rgb( 39 29 145 / 50% );
 
     --box-shadow-4:
-        8px 0px 0 inset rgb( 255 118 118 / 50% ),
+        8px 0px 0 inset rgb(41 255 120 / 50.2%),
         0px 7px 13px -3px rgb( 39 29 145 / 50% );
+
+    --box-shadow-5:
+        inset 3px 3px 0 0 rgb(112 192 249 / 50%),
+        inset -3px -3px 0 0 rgb(112 192 249 / 50%);
+
+    --stacked-shadow-5:
+        -5px 5px 2px 1px rgb(150 251 255 / 50%),
+        -10px 10px 2px 1px rgb(150 255 202 / 30%),
+        -15px 15px 2px 1px rgb(150 255 198 / 20%),
+        -20px 20px 2px 1px rgb(150 255 189 / 10%),
+        -25px 25px 2px 1px rgb(150 255 189 / 5%);
 
 
     --button-focus-shadow:
