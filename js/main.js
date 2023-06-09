@@ -54,48 +54,90 @@ function actionToggle() {
         action.classList.toggle('active');
     }
 
-    span.addEventListener('click', (e) => {
-        e.stopPropagation();
+    mouseEvents();
+    touchEvents();
 
-        if (state === false) {
-            toggleActive();
-            state = true;
-        } else if (state === true) {
+    function mouseEvents() {
+        span.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            if (state === false) {
+                toggleActive();
+                state = true;
+            } else if (state === true) {
+                toggleActive();
+                state = false;
+            }
+        });
+
+        // const isClickedInsideUl = ul && ul.contains(target);
+        document.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const ulClone = ul.cloneNode(true);
+
+            Object.freeze(ulClone);
+
+            const { target } = e;
+            const isClickedInsideAction = action.contains(target);
+
+            // const isClickedInsideSpan = action.contains(target);
+            // const isClickedInsideUl = ul.contains(target);
+            if (!state && isClickedInsideAction) {
+                toggleActive();
+                state = false;
+            }
+
+            if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
+                return;
+            }
+
             toggleActive();
             state = false;
-        }
-    });
+            ulClone.remove();
+        });
+    }
 
-    // const isClickedInsideUl = ul && ul.contains(target);
-    document.addEventListener('click', (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        const ulClone = ul.cloneNode(true);
+    function touchEvents() {
+        span.addEventListener('touch', (e) => {
+            e.stopPropagation();
 
-        Object.freeze(ulClone);
+            if (state === false) {
+                toggleActive();
+                state = true;
+            } else if (state === true) {
+                toggleActive();
+                state = false;
+            }
+        });
 
-        const { target } = e;
-        const isClickedInsideAction = action.contains(target);
-        // const isClickedInsideSpan = action.contains(target);
-        // const isClickedInsideUl = ul.contains(target);
+        // const isClickedInsideUl = ul && ul.contains(target);
+        document.addEventListener('touch', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const ulClone = ul.cloneNode(true);
 
-        if (!state && isClickedInsideAction) {
+            Object.freeze(ulClone);
+
+            const { target } = e;
+            const isClickedInsideAction = action.contains(target);
+
+            // const isClickedInsideSpan = action.contains(target);
+            // const isClickedInsideUl = ul.contains(target);
+            if (!state && isClickedInsideAction) {
+                toggleActive();
+                state = false;
+            }
+
+            if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
+                return;
+            }
+
             toggleActive();
             state = false;
-        }
-
-        if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
-            return;
-        }
-
-        toggleActive();
-        state = false;
-        ulClone.remove();
-
-        // if (!isClickedInsideAction || (isClickedInsideUl && target === ul)) {
-        //     toggleActive();
-        // }
-    });
+            ulClone.remove();
+        });
+    }
 }
 
 actionToggle();
