@@ -7,31 +7,8 @@ html {
 }
 
 * {
-    /* max-width: fit-content; */
     box-sizing: border-box;
 }
-
-
-/* buttons */
-
-/* <button class="button-85" role="button">Button 85</button> */
-
-/* CSS */
-
-/* .button-85 {
-    padding: 0.6em 2em;
-
-    /~ border: dotted; ~/
-    outline: none;
-    color: rgb(9 75 133);
-    background: #f5f5fa;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    user-select: none;
-    touch-action: manipulation;
-} */
 
 
 @keyframes glowing-button-85 {
@@ -60,7 +37,9 @@ body {
     gap: 0 !important;
     padding: 1em;
     background-color: #282c34;
+
     border-radius: 8px;
+
 }
 
 
@@ -135,10 +114,6 @@ h3 {
 
 p {
     color: var( --color-style-light-purple );
-
-    /* font-family: "Fredoka", sans-serif;
-  font-size: small; */
-
     font: var( --paragraph-font-normal );
 }
 
@@ -147,10 +122,6 @@ h5,
 h4,
 p {
     color: var( --color-style-light-purple );
-
-    /* font-family: "Fredoka", sans-serif;
-  font-size: small; */
-
     font: var( --paragraph-font-normal );
 }
 
@@ -189,8 +160,6 @@ a {
 .container {
     top: 150px;
     max-width: 100vw;
-
-    /* box-shadow: var( --box-shadow-2 ); */
     margin: 10px 80px;
     padding: 1em;
     box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% );
@@ -300,31 +269,15 @@ a {
 
 .basegrid {
     position: relative;
-
-    /* box-shadow: var( --box-shadow-2 ); */
-
-    /* max-width: 200px; */
 }
 
 .body {
     box-sizing: border-box;
-
-    /* box-shadow: var( --box-shadow-2 ); */
-
-    /* max-width: 100vw; */
-
-    /* margin: 1em; */
-
-    /* margin: 2em; */
 }
 
 
 .bodygrid {
     position: relative;
-
-    /* box-shadow: var( --box-shadow-2 ); */
-
-    /* margin: 2em; */
 }
 
 .item {
@@ -337,20 +290,14 @@ a {
     object-position: center;
     color: white;
     line-height: 200px;
-
-    /* box-shadow: var( --box-shadow-2 ); */
 }
 
 .item.muuri-item-dragging {
     z-index: 3;
-
-    /* box-shadow: var( --box-shadow-2 ); */
 }
 
 .item.muuri-item-releasing {
     z-index: 2;
-
-    /* box-shadow: var( --box-shadow-2 ); */
 }
 
 .item.muuri-item-hidden {
@@ -373,12 +320,7 @@ a {
 .item-content > video {
     position: relative;
     display: block;
-
-    /* border-radius: 6px; */
-
     height: max-content;
-
-    /* box-shadow: var( --box-shadow-2 ); */
     margin: 2em;
 }
 
@@ -488,9 +430,6 @@ a {
     height: 100%;
     border-radius: 50%;
 
-    /* transform-box: fill-box; */
-
-    /* background-color: var(--box-shadow-4); */
     box-shadow: var(--box-shadow-2);
     user-select: text;
 }
@@ -502,12 +441,10 @@ a {
     padding: 1em;
     background: #fff;
 
-    /*! border: rgb(187 197 245) 4px solid; */
     box-shadow:
         var(--box-shadow-5),
         var(--stacked-shadow-5);
 
-    /* border-radius: 8px; */
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -516,13 +453,14 @@ a {
 .action ul::after {
     position: absolute;
     z-index: -1;
-    backdrop-filter: grayscale(0) blur(0); /* default value */
+
+    backdrop-filter: grayscale(0) blur(0);
     transition:
         inset 0.5s,
         backdrop-filter 0.5s;
-    transition-delay: 0.8s; /* add transition for inset and backdrop-filter */
+    transition-delay: 0.8s;
     content: '';
-    inset: 0; /* default value */
+    inset: 0;
     mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
 }
 
@@ -532,8 +470,6 @@ a {
     padding: 1em;
     background-color: rgb(241 244 253);
     visibility: visible;
-
-    /* backdrop-filter: blur(5px); */
     opacity: 1;
     transition: 0.3s;
     user-select: text;
@@ -582,8 +518,6 @@ a {
     margin: 0;
     padding: 0;
     opacity: 0.2;
-
-    /* transform: scale(0.7); */
 }
 
 .action ul li:hover iconify-icon {
@@ -609,7 +543,6 @@ a {
 
 
 .action ul a:hover iconify-icon {
-    /* transform: scale(1); */
     transform: scale(1.3);
 }
 
@@ -629,7 +562,7 @@ a {
 }
 
 /* .action ul li div:hover {
-    /~ font-weight: 600; ~/
+    ~ font-weight: 600; ~
 }
 */
 .action ul li div iconify-icon {
@@ -643,8 +576,6 @@ a {
 .action ul li div:hover iconify-icon {
     margin: 0;
     padding: 0;
-
-    /* transform: scale(1); */
     opacity: 1;
 }
 
@@ -676,4 +607,3 @@ h6 {
 .action ul a:hover h6 {
     color: var(--color-style-dark-purple);
 }
-
