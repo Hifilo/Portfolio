@@ -3,7 +3,6 @@
 html {
     box-sizing: border-box;
     max-width: 100vw;
-    height: 100vh;
 }
 
 * {
@@ -280,15 +279,14 @@ a {
 
 .item {
     position: absolute;
-    z-index: 1;
-    display: block;
-    max-width: 400px;
-    max-height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     color: white;
     line-height: 200px;
-
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    color: white;
 
     /* box-shadow: var( --box-shadow-2 ); */
 }
@@ -311,8 +309,7 @@ a {
 
 .item-content {
     position: relative;
-    gap: 2em;
-    max-width: 50%;
+    width: 100%;
     height: 100%;
     object-position: center;
     cursor: pointer;
@@ -322,8 +319,13 @@ a {
 .item-content > video {
     position: relative;
     display: block;
-    height: max-content;
+
+    /* box-shadow: var( --box-shadow-2 ); */
     margin: 2em;
+
+    /* border-radius: 6px; */
+
+    height: max-content;
 }
 
 #item-0 {
@@ -430,7 +432,11 @@ a {
     z-index: 1;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    user-select: text;
+
+    /* transform-box: fill-box; */
+
+    /* background-color: var(--box-shadow-4); */
     box-shadow: var(--box-shadow-2);
     user-select: text;
 }
@@ -440,29 +446,27 @@ a {
     bottom: 55px;
     min-width: fit-content;
     padding: 1em;
-    background: #fff;
+
+    /* border-radius: 8px; */
+    visibility: hidden;
+    transition: 0.3s;
+
+    /*! border: rgb(187 197 245) 4px solid; */
     box-shadow:
         var(--box-shadow-5),
         var(--stacked-shadow-5);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
 }
 
 .action ul::after {
     position: absolute;
+    inset: 0; /* default value */
+    backdrop-filter: grayscale(0) blur(0); /* default value */
+    mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
     z-index: -1;
-    backdrop-filter: grayscale(0) blur(0);
     transition:
         inset 0.5s,
         backdrop-filter 0.5s;
-    transition-delay: 0.8s;
-    content: '';
-    inset: 0;
-
-    /* mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%); */
-
-    /* mask-image: radial-gradient(circle, transparent 70%, rgb(0 0 0 / 100%) 30%); */
+    transition-delay: 0.8s; /* add transition for inset and backdrop-filter */
 }
 
 
@@ -470,23 +474,22 @@ a {
     bottom: 65px;
     padding: 1em;
     background-color: rgb(241 244 253);
-    visibility: visible;
+
+    /* backdrop-filter: blur(5px); */
     opacity: 1;
+    visibility: visible;
     transition: 0.3s;
     user-select: text;
 }
 
 .action.active ul::after {
-    position: absolute;
-    z-index: -1;
-    backdrop-filter: grayscale(60) blur(5px);
     transition: inset 1s ease-in-out;
-    transition-delay: 250ms;
     content: '';
-
-    /* mask-image: radial-gradient(rgb(0 0 0 / 100%) 30%, transparent 70%); */
-    mask-image: radial-gradient(circle, transparent 0%, rgb(0 0 0 / 100%) 20%);
-    inset: -100vw;
+    position: absolute;
+    mask-image: radial-gradient(rgb(0 0 0 / 100%) 30%, transparent 70%);
+    z-index: -1;
+    inset: -60vw;
+    backdrop-filter: grayscale(60) blur(5px);
 }
 
 .action ul li {
@@ -521,7 +524,8 @@ a {
 .action ul li iconify-icon {
     margin: 0;
     padding: 0;
-    opacity: 0.2;
+
+    /* transform: scale(0.7); */
 }
 
 .action ul li:hover iconify-icon {
@@ -578,9 +582,10 @@ a {
 }
 
 .action ul li div:hover iconify-icon {
+    /* transform: scale(1); */
+    opacity: 1;
     margin: 0;
     padding: 0;
-    opacity: 1;
 }
 
 .action ul li div:not(:last-child) {
