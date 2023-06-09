@@ -48,25 +48,96 @@ function actionToggle() {
     const action = document.querySelector('.action');
     const span = action.querySelector('span');
     const ul = action.querySelector('ul');
+    let state = false;
 
     function toggleActive() {
         action.classList.toggle('active');
     }
 
-    span.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleActive();
-    });
+    mouseEvents();
+    touchEvents();
 
-    document.addEventListener('click', function (e) {
-        const { target } = e;
-        const isClickedInsideAction = action.contains(target);
-        const isClickedInsideUl = ul && ul.contains(target);
+    function mouseEvents() {
+        span.addEventListener('click', (e) => {
+            e.stopPropagation();
 
-        if (!isClickedInsideAction || (isClickedInsideUl && target === ul)) {
+            if (state === false) {
+                toggleActive();
+                state = true;
+            } else if (state === true) {
+                toggleActive();
+                state = false;
+            }
+        });
+
+        // const isClickedInsideUl = ul && ul.contains(target);
+        document.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const ulClone = ul.cloneNode(true);
+
+            Object.freeze(ulClone);
+
+            const { target } = e;
+            const isClickedInsideAction = action.contains(target);
+
+            // const isClickedInsideSpan = action.contains(target);
+            // const isClickedInsideUl = ul.contains(target);
+            if (!state && isClickedInsideAction) {
+                toggleActive();
+                state = false;
+            }
+
+            if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
+                return;
+            }
+
             toggleActive();
-        }
-    });
+            state = false;
+            ulClone.remove();
+        });
+    }
+
+    function touchEvents() {
+        span.addEventListener('touch', (e) => {
+            e.stopPropagation();
+
+            if (state === false) {
+                toggleActive();
+                state = true;
+            } else if (state === true) {
+                toggleActive();
+                state = false;
+            }
+        });
+
+        // const isClickedInsideUl = ul && ul.contains(target);
+        document.addEventListener('touch', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            const ulClone = ul.cloneNode(true);
+
+            Object.freeze(ulClone);
+
+            const { target } = e;
+            const isClickedInsideAction = action.contains(target);
+
+            // const isClickedInsideSpan = action.contains(target);
+            // const isClickedInsideUl = ul.contains(target);
+            if (!state && isClickedInsideAction) {
+                toggleActive();
+                state = false;
+            }
+
+            if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
+                return;
+            }
+
+            toggleActive();
+            state = false;
+            ulClone.remove();
+        });
+    }
 }
 
 actionToggle();
