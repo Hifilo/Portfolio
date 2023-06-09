@@ -48,24 +48,53 @@ function actionToggle() {
     const action = document.querySelector('.action');
     const span = action.querySelector('span');
     const ul = action.querySelector('ul');
+    let state = false;
 
     function toggleActive() {
         action.classList.toggle('active');
     }
 
-    span.addEventListener('click', function (e) {
+    span.addEventListener('click', (e) => {
         e.stopPropagation();
-        toggleActive();
+
+        if (state === false) {
+            toggleActive();
+            state = true;
+        } else if (state === true) {
+            toggleActive();
+            state = false;
+        }
     });
 
-    document.addEventListener('click', function (e) {
+    // const isClickedInsideUl = ul && ul.contains(target);
+    document.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        const ulClone = ul.cloneNode(true);
+
+        Object.freeze(ulClone);
+
         const { target } = e;
         const isClickedInsideAction = action.contains(target);
-        const isClickedInsideUl = ul && ul.contains(target);
+        // const isClickedInsideSpan = action.contains(target);
+        // const isClickedInsideUl = ul.contains(target);
 
-        if (!isClickedInsideAction || (isClickedInsideUl && target === ul)) {
+        if (!state && isClickedInsideAction) {
             toggleActive();
+            state = false;
         }
+
+        if (!(state && (isClickedInsideAction || !isClickedInsideAction) && !ulClone.contains(target))) {
+            return;
+        }
+
+        toggleActive();
+        state = false;
+        ulClone.remove();
+
+        // if (!isClickedInsideAction || (isClickedInsideUl && target === ul)) {
+        //     toggleActive();
+        // }
     });
 }
 
