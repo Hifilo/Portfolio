@@ -284,12 +284,15 @@ a {
     position: absolute;
     z-index: 1;
     display: block;
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: scale-down;
     object-position: center;
     color: white;
     line-height: 200px;
+
+
+    /* box-shadow: var( --box-shadow-2 ); */
 }
 
 .item.muuri-item-dragging {
@@ -311,7 +314,7 @@ a {
 .item-content {
     position: relative;
     gap: 2em;
-    width: 100%;
+    max-width: 50%;
     height: 100%;
     cursor: pointer;
 }
