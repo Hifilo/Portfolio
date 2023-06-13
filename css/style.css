@@ -37,8 +37,8 @@ body {
     gap: 0 !important;
     padding: 1em;
     background-color: #282c34;
-
     border-radius: 8px;
+
 
 }
 
@@ -284,12 +284,15 @@ a {
     position: absolute;
     z-index: 1;
     display: block;
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
     object-position: center;
     color: white;
     line-height: 200px;
+
+
+    /* box-shadow: var( --box-shadow-2 ); */
 }
 
 .item.muuri-item-dragging {
@@ -311,8 +314,9 @@ a {
 .item-content {
     position: relative;
     gap: 2em;
-    width: 100%;
+    max-width: 50%;
     height: 100%;
+    object-position: center;
     cursor: pointer;
 }
 
@@ -461,7 +465,10 @@ a {
     transition-delay: 0.8s;
     content: '';
     inset: 0;
-    mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
+
+    /* mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%); */
+
+    /* mask-image: radial-gradient(circle, transparent 70%, rgb(0 0 0 / 100%) 30%); */
 }
 
 
@@ -480,9 +487,12 @@ a {
     z-index: -1;
     backdrop-filter: grayscale(60) blur(5px);
     transition: inset 1s ease-in-out;
+    transition-delay: 250ms;
     content: '';
-    mask-image: radial-gradient(rgb(0 0 0 / 100%) 30%, transparent 70%);
-    inset: -60vw;
+
+    /* mask-image: radial-gradient(rgb(0 0 0 / 100%) 30%, transparent 70%); */
+    mask-image: radial-gradient(circle, transparent 0%, rgb(0 0 0 / 100%) 20%);
+    inset: -100vw;
 }
 
 .action ul li {

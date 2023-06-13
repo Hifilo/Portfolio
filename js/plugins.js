@@ -85,9 +85,9 @@
         });
     });
 
-    var method;
-    var noop = function () {};
-    var methods = [
+    let method;
+    let noop = function () {};
+    let methods = [
         'assert',
         'clear',
         'count',
@@ -113,8 +113,8 @@
         'trace',
         'warn',
     ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+    let { length } = methods;
+    let console = (window.console = window.console || {});
 
     while (length--) {
         method = methods[length];
