@@ -38,8 +38,6 @@ body {
     padding: 1em;
     background-color: #282c34;
     border-radius: 8px;
-
-
 }
 
 
@@ -433,7 +431,6 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
     box-shadow: var(--box-shadow-2);
     user-select: text;
 }
@@ -444,11 +441,9 @@ a {
     min-width: fit-content;
     padding: 1em;
     background: #fff;
-
     box-shadow:
         var(--box-shadow-5),
         var(--stacked-shadow-5);
-
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -457,7 +452,6 @@ a {
 .action ul::after {
     position: absolute;
     z-index: -1;
-
     backdrop-filter: grayscale(0) blur(0);
     transition:
         inset 0.5s,
