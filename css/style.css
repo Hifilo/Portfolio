@@ -281,7 +281,7 @@ a {
     position: absolute;
     z-index: 1;
     display: block;
-    max-width: 400px;
+    max-width: 100%;
     max-height: 400px;
     object-fit: cover;
     object-position: center;
@@ -311,7 +311,7 @@ a {
 .item-content {
     position: relative;
     gap: 2em;
-    max-width: 50%;
+    max-width: 100%;
     height: 100%;
     object-position: center;
     cursor: pointer;
@@ -322,12 +322,13 @@ a {
     position: relative;
     display: block;
 
-    /* box-shadow: var( --box-shadow-2 ); */
-    margin: 2em;
-
     /* border-radius: 6px; */
 
     height: max-content;
+
+    /* box-shadow: var( --box-shadow-2 ); */
+    margin: 2em;
+    object-fit: contain;
 }
 
 #item-0 {
@@ -402,7 +403,7 @@ a {
     position: fixed;
     bottom: 50px;
     left: 50px;
-    z-index: 3;
+    z-index: 8;
     width: fit-content;
     height: fit-content;
     margin: 1em;
@@ -431,11 +432,10 @@ a {
 }
 
 .action.active span {
-    z-index: 1;
+    z-index: 8;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
     box-shadow: var(--box-shadow-2);
     user-select: text;
 }
@@ -446,11 +446,9 @@ a {
     min-width: fit-content;
     padding: 1em;
     background: #fff;
-
     box-shadow:
         var(--box-shadow-5),
         var(--stacked-shadow-5);
-
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -458,17 +456,15 @@ a {
 
 .action ul::after {
     position: absolute;
-    inset: 0; /* default value */
-    backdrop-filter: grayscale(0) blur(0); /* default value */
-    mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
     z-index: -1;
-
+    backdrop-filter: grayscale(0) blur(0); /* default value */
     backdrop-filter: grayscale(0) blur(0);
     transition:
         inset 0.5s,
         backdrop-filter 0.5s;
     transition-delay: 0.8s;
-    content: '';
+    content: ''; /* default value */
+    mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%);
     inset: 0;
 
     /* mask-image: radial-gradient(rgb(0 0 0 / 100%) 20%, transparent 70%); */
@@ -481,15 +477,18 @@ a {
     bottom: 65px;
     padding: 1em;
     background-color: rgb(241 244 253);
+    visibility: visible;
 
     /* backdrop-filter: blur(5px); */
     opacity: 1;
-    visibility: visible;
     transition: 0.3s;
     user-select: text;
 }
 
 .action.active ul::after {
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: grayscale(60) blur(5px);
     transition: inset 1s ease-in-out;
     transition-delay: 250ms;
     content: '';
@@ -589,10 +588,11 @@ a {
 }
 
 .action ul li div:hover iconify-icon {
-    /* transform: scale(1); */
-    opacity: 1;
     margin: 0;
     padding: 0;
+
+    /* transform: scale(1); */
+    opacity: 1;
 }
 
 .action ul li div:not(:last-child) {

@@ -43,6 +43,52 @@
 // Events
 // document.querySelectorAll('.button-main').forEach((el) => el.addEventListener('mousedown', start));
 // document.addEventListener('mouseup', stop);
+let items = document.querySelectorAll('.item');
+
+items.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        // Reset z-index of all items except clicked item
+        items.forEach(function (otherItem) {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+                otherItem.style.zIndex = 1;
+            }
+        });
+
+        if (item.classList.contains('active')) {
+            item.classList.remove('active');
+            item.style.zIndex = 1;
+        } else {
+            item.classList.add('active');
+            item.style.zIndex = 4;
+        }
+
+        // Add click event listener to each `.item` element to remove `.active` class
+        item.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    });
+});
+
+document.addEventListener('click', function (e) {
+    let isClickInsideItem = false;
+
+    items.forEach(function (item) {
+        if (item.contains(e.target)) {
+            isClickInsideItem = true;
+        }
+    });
+
+    if (!isClickInsideItem) {
+        items.forEach(function (item) {
+            item.classList.remove('active');
+            item.style.zIndex = 1;
+        });
+    }
+});
 
 function actionToggle() {
     const action = document.querySelector('.action');
