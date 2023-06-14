@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
@@ -78,10 +79,17 @@
         showDuration: 600,
         showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
     });
+    let items = document.querySelectorAll('.item');
 
-    [].slice.call(document.querySelectorAll('.item')).forEach(function (elem) {
-        elem.addEventListener('click', function (e) {
-            e.preventDefault();
+    items.forEach(function (item) {
+        item.addEventListener('click', function () {
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+                item.style.zIndex = 1;
+            } else {
+                item.classList.add('active');
+                item.style.zIndex = 9999;
+            }
         });
     });
 
