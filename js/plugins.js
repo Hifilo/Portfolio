@@ -1,68 +1,3 @@
-/* eslint-disable no-shadow */
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-plusplus */
-/* eslint-disable no-multi-assign */
-// Avoid `console` errors in browsers that lack a console.
-// eslint-disable-next-line no-undef
-// let grid = new Muuri('.grid');
-// eslint-disable-next-line no-undef
-
-// let bodyGrid = new Muuri('.bodygrid', {
-//     layout: function (grid, layoutId, items, width, height, callback) {
-//         let layout = {
-//             id: layoutId,
-//             items: items,
-//             slots: [],
-//             styles: {},
-//         };
-//         // Calculate the slots asynchronously. Note that the timeout is here only
-//         // as an example and does not help at all in the calculations. You should
-//         // offload the calculations to web workers if you want real benefits.
-//         // Also note that doing asynchronous layout is completely optional and you
-//         // can call the callback function synchronously also.
-//         let timerId = window.setTimeout(function () {
-//             let item;
-//             let m;
-//             let x = 0;
-//             let y = 0;
-//             let w = 0;
-//             let h = 0;
-
-//             for (let i = 0; i < items.length; i++) {
-//                 item = items[i];
-//                 x += w;
-//                 y += h;
-//                 m = item.getMargin();
-//                 w = item.getWidth() + m.left + m.right;
-//                 h = item.getHeight() + m.top + m.bottom;
-//                 layout.slots.push(x, y);
-//             }
-
-//             w += x;
-//             h += y;
-//             // Set the CSS styles that should be applied to the grid element.
-//             layout.styles.width = `${w}px`;
-//             layout.styles.height = `${h}px`;
-//             // layout.styles.width = `100vw`;
-//             // layout.styles.height = `100vh`;
-//             // When the layout is fully computed let's call the callback function and
-//             // provide the layout object as it's argument.
-//             callback(layout);
-//         }, 200);
-
-//         // If you are doing an async layout you _can_ (if you want to) return a
-//         // function that cancels this specific layout calculations if it's still
-//         // processing/queueing when the next layout is requested.
-//         return function () {
-//             window.clearTimeout(timerId);
-//         };
-//     },
-// });
-// let baseGrid = new Muuri('.basegrid');
-// let header = new Muuri('.header');
-
 (function () {
     let bodyGrid = new Muuri('.bodygrid', {
         layout: {
@@ -71,8 +6,8 @@
             alignRight: false,
             alignBottom: false,
             rounding: true,
-            itemWidth: '100%',
-            itemHeight: '100%',
+            itemWidth: '50%',
+            itemHeight: '50%',
         },
         layoutOnResize: 150,
         layoutOnInit: true,
