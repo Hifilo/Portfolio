@@ -1,13 +1,13 @@
 (function () {
     let bodyGrid = new Muuri('.bodygrid', {
         layout: {
-            fillGaps: false,
+            fillGaps: true,
             horizontal: false,
             alignRight: false,
             alignBottom: false,
             rounding: true,
-            itemWidth: '50%',
-            itemHeight: '50%',
+            Width: '100vw',
+            Height: '100vh',
         },
         layoutOnResize: 150,
         layoutOnInit: true,
