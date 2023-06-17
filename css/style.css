@@ -335,10 +335,10 @@ a {
 
 /* .video-wrapper {
     position: absolute;
-    /~ display: block;
-    height: 50% ~/
+    display: block;
+    height: 50%;
 
-    /~ padding-bottom: 56.25%; Adjust the padding-bottom based on the desired aspect ratio ~/
+    /~ padding-bottom: 25.25%; ~/
 } */
 
 /* .video-wrapper video {
@@ -481,7 +481,6 @@ a {
     position: absolute;
     z-index: -1;
     backdrop-filter: grayscale(0) blur(0); /* default value */
-    backdrop-filter: grayscale(0) blur(0);
     transition:
         inset 0.5s,
         backdrop-filter 0.5s;
