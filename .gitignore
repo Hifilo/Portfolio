@@ -6,10 +6,10 @@ node_modules
 issues
 dist
 .cache
-videos/ignore
+
 *copy*
 indexwgridplugin.html
-
+content/videos/ignore
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
