@@ -3,7 +3,7 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 node_modules
-
+/issues
 dist
 .cache
 videos/ignore
