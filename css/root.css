@@ -1,7 +1,6 @@
 :root {
     /* fonts */
     --fallback-fonts:
-        'fredoka'
         system-ui,
         -apple-system,
         blinkmacsystemfont,
@@ -11,26 +10,40 @@
         ubuntu,
         cantarell,
         'Open Sans',
-        'Helvetica Neue',
-        sans-serif;
+        'Helvetica Neue';
 
+    --font-fredoka: 'Fredoka';
+
+    --font-coolvetica: 'Coolvetica Rg';
+
+    /* --paragraph-font-normal: normal normal 400 normal medium / normal 'Fredoka';
+
+    --paragraph-font-small: normal normal 400 normal small / normal 'Fredoka';
+
+    --paragraph-font-bold: normal normal 600 normal medium / normal 'Fredoka';
+
+    --display-font-large: normal normal 600 expanded 36px / normal 'Coolvetica Rg';
+
+    --display-font-h3: normal normal 500 expanded x-large / normal 'Coolvetica Rg'; */
     --paragraph-font-normal:
-        normal normal 400 normal medium / normal 'Fredoka',
-        sans-serif;
-
-    --paragraph-font-small:
-        normal normal 400 normal small / normal 'Fredoka',
-        sans-serif;
-
-    --paragraph-font-bold:
-        normal normal 600 normal medium / normal 'Fredoka',
-        sans-serif;
-
-    --display-font-large:
-        normal normal 600 expanded 36px / normal 'Coolvetica Rg',
+        normal normal 400 normal medium / normal var(--font-fredoka),
         var( --fallback-fonts );
 
-    --display-font-h3: normal normal 500 expanded x-large / normal 'Coolvetica Rg',;
+    --paragraph-font-small:
+        normal normal 400 normal small / normal var(--font-fredoka),
+        var( --fallback-fonts );
+
+    --paragraph-font-bold:
+        normal normal 600 normal medium / normal var(--font-fredoka),
+        var( --fallback-fonts );
+
+    --display-font-large:
+        normal normal 600 expanded 36px / normal var(--font-coolvetica),
+        var( --fallback-fonts );
+
+    --display-font-h3:
+        normal normal 500 expanded x-large / normal var(--font-coolvetica),
+        var( --fallback-fonts );
 
     --color-primary: #2c5282;
 
