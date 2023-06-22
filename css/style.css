@@ -69,6 +69,18 @@ body {
     justify-content: flex-start;
 }
 
+<<<<<<< HEAD
+h3.h-flex {
+=======
+h3.hflex {
+<<<<<<< HEAD
+>>>>>>> d98c493 (minor updates)
+=======
+>>>>>>> b96f89e (Develop (#6))
+>>>>>>> 39bd971 (Develop (#6))
+    flex-wrap: wrap;
+}
+
 div .code .h-flex {
     gap: 0;
     margin: 0;
