@@ -1,5 +1,23 @@
 const items = document.querySelectorAll('.item');
 
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.a-hidden');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+
+            if (entry.isIntersecting) {
+                entry.target.classList.toggle('a-show');
+            }
+        });
+    });
+
+    elements.forEach((element) => {
+        observer.observe(element);
+    });
+}
+
+animateOnScroll();
 items.forEach(function (item) {
     item.addEventListener('click', function (e) {
         e.stopPropagation();

@@ -470,3 +470,18 @@ h6 {
 .music ul a:hover h6 {
     color: var(--color-style-dark-purple);
 }
+
+
+.a-hidden {
+    opacity: 0;
+}
+
+.a-show {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.spacer {
+    position: relative;
+    min-height: 25em;
+}
