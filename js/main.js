@@ -1,5 +1,3 @@
-const items = document.querySelectorAll('.item');
-
 function animateOnScroll() {
     const elements = document.querySelectorAll('.a-hidden');
     const observer = new IntersectionObserver((entries) => {
@@ -18,6 +16,8 @@ function animateOnScroll() {
 }
 
 animateOnScroll();
+const items = document.querySelectorAll('.item');
+
 items.forEach(function (item) {
     item.addEventListener('click', function (e) {
         e.stopPropagation();

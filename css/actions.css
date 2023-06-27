@@ -1,5 +1,13 @@
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable block-no-empty */
+.a-hidden {
+    opacity: 0;
+    transition: all 1s;;
+}
+
+.a-show {
+    opacity: 1;
+}
 
 .action {
     position: fixed;
@@ -471,15 +479,6 @@ h6 {
     color: var(--color-style-dark-purple);
 }
 
-
-.a-hidden {
-    opacity: 0;
-}
-
-.a-show {
-    opacity: 1;
-    transition: all 1s;
-}
 
 .spacer {
     position: relative;
