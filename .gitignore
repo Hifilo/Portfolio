@@ -7,7 +7,7 @@ issues
 dist
 .cache
 
-*copy*
+**copy**
 indexwgridplugin.html
 content/videos/ignore
 .vscode/*
