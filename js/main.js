@@ -1,5 +1,10 @@
 function animateOnScroll() {
     const elements = document.querySelectorAll('.a-hidden');
+    // let stage = [];
+    let options = {
+        rootMargin: '-25% 0px',
+        threshold: 1,
+    };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log(entry);
@@ -8,14 +13,16 @@ function animateOnScroll() {
                 entry.target.classList.toggle('a-show');
             }
         });
-    });
+    }, options);
 
     elements.forEach((element) => {
         observer.observe(element);
     });
 }
 
-animateOnScroll();
+document.addEventListener('DOMContentLoaded', function () {
+    animateOnScroll();
+});
 const items = document.querySelectorAll('.item');
 
 items.forEach(function (item) {
@@ -160,5 +167,9 @@ function actionToggle() {
         });
     }
 }
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
 actionToggle();

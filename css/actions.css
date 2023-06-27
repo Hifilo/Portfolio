@@ -1,12 +1,26 @@
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable block-no-empty */
 .a-hidden {
+    transform: translate(-100%);
     opacity: 0;
-    transition: all 1s;;
+    transition: all 1s;
 }
 
 .a-show {
+    /* transform: translate(0); */
     opacity: 1;
+}
+
+.a-show:active {
+    box-shadow: none;
+}
+
+.a-show.splash:nth-of-type(odd) {
+    transform: translate(25%);
+}
+
+.a-show.splash:nth-of-type(even) {
+    transform: translate(-25%);
 }
 
 .action {

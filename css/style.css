@@ -244,6 +244,8 @@ p {
 
 
 .welcome {
+    position: relative;
+    top: calc(100vh/2);
     display: grid;
     gap: 25em;
     align-items: center;
@@ -254,9 +256,6 @@ p {
     place-items: center;
 }
 
-.welcome .container{
-
-}
 
 .splash {
     display: inline-block;
@@ -271,10 +270,14 @@ p {
     text-align: center;
     background-color: var(--color-style-lightbluebg);
     border-radius: 16px;
-    box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% );
+
+    /* box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% ); */
+
+    /* box-shadow: var(--box-shadow-button); */
 }
 
-.welcome .splash:nth-child(5) {
+
+.welcome .splash:last-child {
     margin-bottom: 15em;
 }
 
