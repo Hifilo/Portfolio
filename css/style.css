@@ -218,64 +218,18 @@ a {
 
 .container {
     /*! top: 150px; */
+    display: inline;
     max-width: fit-content;
     height: 100%;
     margin: 1em 80px;
     padding: 1em;
     text-align: center;
+    vertical-align: middle;
     border-radius: 16px;
     box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% );
 
     /*! text-justify: auto; */
 }
-
-/* Fonts Section */
-
-.font-panel {
-    display: inline-block;
-    width: 40%;
-    max-width: 360px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-.font-title {
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.fred-normal {
-    font: var( --paragraph-font-normal );
-}
-
-.fred-bold {
-    font: var( --paragraph-font-bold );
-}
-
-.fred-small {
-    font: var( --paragraph-font-small );
-}
-
-
-.regular {
-    font-weight: lighter;
-}
-
-.bold {
-    font-weight: bolder;
-}
-
-.italic {
-    font-style: italic;
-}
-
-/* Style Section */
-
-.style-panel {
-    text-align: left;
-}
-
-/* Font styling End */
 
 
 .mainlinks {

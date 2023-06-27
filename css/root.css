@@ -117,3 +117,50 @@
 
     --linear-gradient-1: linear-gradient( 100% 100% at 100% 0, var( --color-style-red ) 0%, var( --color-style-green ) 100% );
 }
+
+
+/* font styles expanded */
+
+.font-panel {
+    display: inline-block;
+    width: 40%;
+    max-width: 360px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.font-title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.fred-normal {
+    font: var( --paragraph-font-normal );
+}
+
+.fred-bold {
+    font: var( --paragraph-font-bold );
+}
+
+.fred-small {
+    font: var( --paragraph-font-small );
+}
+
+
+.regular {
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Style Section */
+
+.style-panel {
+    text-align: left;
+}
