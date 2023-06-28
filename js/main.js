@@ -2,7 +2,7 @@ function animateOnScroll() {
     const elements = document.querySelectorAll('.splash');
 
     console.log(elements);
-    let stage = [];
+    let stage = 0;
     let options = {
         rootMargin: '-25% 0px',
         threshold: 1,
@@ -12,6 +12,7 @@ function animateOnScroll() {
             console.log(entry);
 
             if (entry.isIntersecting) {
+                console.log(stage);
                 entry.target.animate(
                     [
                         {
