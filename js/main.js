@@ -1,6 +1,8 @@
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.a-hidden');
-    // let stage = [];
+    const elements = document.querySelectorAll('.splash');
+
+    console.log(elements);
+    let stage = [];
     let options = {
         rootMargin: '-25% 0px',
         threshold: 1,
@@ -10,7 +12,28 @@ function animateOnScroll() {
             console.log(entry);
 
             if (entry.isIntersecting) {
-                entry.target.classList.toggle('a-show');
+                entry.target.animate(
+                    [
+                        {
+                            offset: 0,
+                            transform: 'translateX(-100%)',
+                            opacity: 0,
+                        },
+                        {
+                            offset: 1,
+                            transform: 'translateX(0)',
+                            opacity: 1,
+                        },
+                    ],
+                    {
+                        duration: 1000,
+                        easing: 'ease-out',
+                        delay: 0,
+                        iterations: 1,
+                        direction: 'normal',
+                        fill: 'both',
+                    }
+                );
             }
         });
     }, options);

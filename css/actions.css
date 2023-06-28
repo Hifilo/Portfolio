@@ -16,12 +16,29 @@
     box-shadow: none;
 }
 
+.splash {
+    display: inline-block;
+    width: calc(100%/3);
+
+    /*! margin: auto; */
+    min-width: min-content;
+    padding: 1em;
+    font: var( --display-font-large );
+
+    /* font-size: xx-large; */
+    text-align: center;
+    background-color: var(--color-style-lightbluebg);
+    border-radius: 16px;
+
+    /* box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% ); */
+}
+
 .a-show.splash:nth-of-type(odd) {
-    transform: translate(25%);
+    /* transform: translate(25%); */
 }
 
 .a-show.splash:nth-of-type(even) {
-    transform: translate(-25%);
+    /* transform: translate(-25%); */
 }
 
 .action {
