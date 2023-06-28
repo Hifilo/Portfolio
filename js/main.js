@@ -1,9 +1,24 @@
+// const animationOne = {
+//     keyframes: [
+//         { offset: 0, transform: 'translateX(-100%)', opacity: 0 },
+//         { offset: 1, transform: 'translateX(0)', opacity: 1 },
+//     ],
+//     options: {
+//         duration: 1000,
+//         easing: 'ease-out',
+//         delay: 0,
+//         iterations: 1,
+//         direction: 'normal',
+//         fill: 'both',
+//     },
+// };
+
 function animateOnScroll() {
     const elements = document.querySelectorAll('.splash');
 
     console.log(elements);
     let stage = 0;
-    let options = {
+    const options = {
         rootMargin: '-25% 0px',
         threshold: 1,
     };
@@ -36,6 +51,9 @@ function animateOnScroll() {
                     }
                 );
             }
+
+            // if (!entry.isIntersecting) {
+            // }
         });
     }, options);
 
@@ -44,18 +62,18 @@ function animateOnScroll() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll();
 });
 const items = document.querySelectorAll('.item');
 
-items.forEach(function (item) {
-    item.addEventListener('click', function (e) {
+items.forEach((item) => {
+    item.addEventListener('click', (e) => {
         e.stopPropagation();
         e.preventDefault();
 
         // Reset z-index of all items except clicked item
-        items.forEach(function (otherItem) {
+        items.forEach((otherItem) => {
             if (otherItem !== item) {
                 otherItem.classList.remove('active');
                 otherItem.style.zIndex = 1;
@@ -73,23 +91,23 @@ items.forEach(function (item) {
         }
 
         // Add click event listener to each `.item` element to remove `.active` class
-        item.addEventListener('click', function (e) {
+        item.addEventListener('click', (e) => {
             e.stopPropagation();
         });
     });
 });
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', (e) => {
     let isClickInsideItem = false;
 
-    items.forEach(function (item) {
+    items.forEach((item) => {
         if (item.contains(e.target)) {
             isClickInsideItem = true;
         }
     });
 
     if (!isClickInsideItem) {
-        items.forEach(function (item) {
+        items.forEach((item) => {
             item.classList.remove('active');
             item.style.zIndex = 1;
         });
@@ -192,7 +210,7 @@ function actionToggle() {
     }
 }
 
-window.onbeforeunload = function () {
+window.onbeforeunload = () => {
     window.scrollTo(0, 0);
 };
 

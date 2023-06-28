@@ -4,7 +4,6 @@
     box-shadow: var(--box-shadow-2);
     transform: translate(-100%);
     opacity: 0;
-    transition: all 1s;
 }
 
 .a-show {
@@ -12,9 +11,6 @@
     opacity: 1;
 }
 
-.splash:active {
-    box-shadow: none;
-}
 
 .splash {
     display: inline-block;
@@ -29,6 +25,7 @@
     text-align: center;
     background-color: var(--color-style-lightbluebg);
     border-radius: 16px;
+    opacity: 0;
 
     /* box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% ); */
 }
