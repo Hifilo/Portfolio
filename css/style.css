@@ -9,22 +9,6 @@ html {
     box-sizing: border-box;
 }
 
-
-@keyframes glowing-button-85 {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-
 body {
     box-sizing: border-box;
     max-width: 100vw;
@@ -272,8 +256,6 @@ p {
     border-radius: 16px;
 
     /* box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% ); */
-
-    /* box-shadow: var(--box-shadow-button); */
 }
 
 
