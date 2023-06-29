@@ -1,59 +1,56 @@
-// const animationOne = {
-//     keyframes: [
-//         { offset: 0, transform: 'translateX(-100%)', opacity: 0 },
-//         { offset: 1, transform: 'translateX(0)', opacity: 1 },
-//     ],
-//     options: {
-//         duration: 1000,
-//         easing: 'ease-out',
-//         delay: 0,
-//         iterations: 1,
-//         direction: 'normal',
-//         fill: 'both',
-//     },
-// };
-
 function animateOnScroll() {
     const elements = document.querySelectorAll('.splash');
 
     console.log(elements);
     let stage = 0;
     const options = {
-        rootMargin: '-25% 0px',
-        threshold: 1,
+        rootMargin: '-30% 0px',
+        threshold: 0.7,
     };
+
+    const animationKeyframes = [
+        {
+            offset: 0,
+            transform: 'translateX(-100%)',
+            opacity: 0,
+        },
+        {
+            offset: 1,
+            transform: 'translateX(0)',
+            opacity: 1,
+        },
+    ];
+
+    const animationOptions = {
+        duration: 1000,
+        easing: 'ease-out',
+        delay: 0,
+        iterations: 1,
+        direction: 'normal',
+        fill: 'both',
+    };
+
+    const animation = new Animation(new KeyframeEffect(null, animationKeyframes, animationOptions), document.timeline);
+
+    const reverseAnimation = new Animation(
+        new KeyframeEffect(null, animationKeyframes, animationOptions),
+        document.timeline
+    );
+
+    // reverseAnimation.reverse();
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log(entry);
+            animation.effect.target = entry.target;
 
             if (entry.isIntersecting) {
-                console.log(stage);
-                entry.target.animate(
-                    [
-                        {
-                            offset: 0,
-                            transform: 'translateX(-100%)',
-                            opacity: 0,
-                        },
-                        {
-                            offset: 1,
-                            transform: 'translateX(0)',
-                            opacity: 1,
-                        },
-                    ],
-                    {
-                        duration: 1000,
-                        easing: 'ease-out',
-                        delay: 0,
-                        iterations: 1,
-                        direction: 'normal',
-                        fill: 'both',
-                    }
-                );
+                animation.play();
             }
 
-            // if (!entry.isIntersecting) {
-            // }
+            if (!entry.isIntersecting) {
+                animation.reverse();
+            }
         });
     }, options);
 
