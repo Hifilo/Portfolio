@@ -1,54 +1,27 @@
 function animateOnScroll() {
     const elements = document.querySelectorAll('.splash');
 
-    console.log(elements);
-    let stage = 0;
+    // const stage = 0;
     const options = {
-        rootMargin: '-30% 0px',
-        threshold: 0.7,
+        rootMargin: '-20% 0px',
+        threshold: 0.5,
     };
 
-    const animationKeyframes = [
-        {
-            offset: 0,
-            transform: 'translateX(-100%)',
-            opacity: 0,
-        },
-        {
-            offset: 1,
-            transform: 'translateX(0)',
-            opacity: 1,
-        },
-    ];
+    const animationKeyframes = slideIn('-100%', 0, '0', 1);
 
-    const animationOptions = {
-        duration: 1000,
-        easing: 'ease-out',
-        delay: 0,
-        iterations: 1,
-        direction: 'normal',
-        fill: 'both',
-    };
-
-    const animation = new Animation(new KeyframeEffect(null, animationKeyframes, animationOptions), document.timeline);
-
-    const reverseAnimation = new Animation(
-        new KeyframeEffect(null, animationKeyframes, animationOptions),
-        document.timeline
-    );
-
-    // reverseAnimation.reverse();
+    const animationOptions = AnimationTimingOptions();
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            console.log(entry);
-            animation.effect.target = entry.target;
+            const animation = new Animation(
+                new KeyframeEffect(entry.target, animationKeyframes, animationOptions),
+                document.timeline
+            );
+            // animation.effect.target = entry.target;
 
             if (entry.isIntersecting) {
                 animation.play();
-            }
-
-            if (!entry.isIntersecting) {
+            } else if (!entry.isIntersecting) {
                 animation.reverse();
             }
         });
@@ -57,6 +30,39 @@ function animateOnScroll() {
     elements.forEach((element) => {
         observer.observe(element);
     });
+
+    function AnimationTimingOptions(
+        duration = 1000,
+        easing = 'ease-out',
+        delay = 0,
+        iterations = 1,
+        direction = 'normal',
+        fill = 'both'
+    ) {
+        return {
+            duration,
+            easing,
+            delay,
+            iterations,
+            direction,
+            fill,
+        };
+    }
+
+    function slideIn(translateXValue1 = '-100%', opacityValue1 = '0', translateXValue2 = 0, opacityValue2 = 1) {
+        return [
+            {
+                offset: 0,
+                transform: `translateX(${translateXValue1})`,
+                opacity: opacityValue1,
+            },
+            {
+                offset: 1,
+                transform: `translateX(${translateXValue2})`,
+                opacity: opacityValue2,
+            },
+        ];
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

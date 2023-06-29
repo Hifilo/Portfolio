@@ -22,6 +22,7 @@
     /*! margin: auto; */
     min-width: min-content;
     padding: 1em;
+    color: var(--color-style-dark-purple);
     font: var( --display-font-large );
 
     /* font-size: xx-large; */

@@ -46,6 +46,12 @@ body {
         sans-serif;
 }
 
+.flex-center {
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
 
 .h-flex {
     display: flex;
@@ -101,7 +107,7 @@ div .code .h-flex {
     flex-wrap: wrap;
     grid-template-rows: repeat(auto-fit, minmax(50px, 2fr));
     grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
-    gap: 40rem;
+    gap: 20rem;
     align-content: center;
     align-content: start;
     align-items: flex-start;
