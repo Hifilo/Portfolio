@@ -2,7 +2,7 @@
 
 This is currently a Work in progress and isn't 100% responsive.
 
-**It is best viewed on devices wider than 450px.**
+**It is best viewed on devices with a width of 450px or wider.**
 
 **There is a lot of video content that auto-loads & auto-plays.**
 I have a complete idea to address this, but I need a little more understanding of javascript before I can tackle it.
