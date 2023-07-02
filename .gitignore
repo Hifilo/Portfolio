@@ -8,7 +8,7 @@ dist
 .cache
 
 /referencefiles
-
+*help*
 **copy**
 indexwgridplugin.html
 content/videos/ignore
