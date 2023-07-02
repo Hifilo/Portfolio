@@ -6,7 +6,7 @@ node_modules
 issues
 dist
 .cache
-
+output.txt
 /referencefiles
 *help*
 **copy**
