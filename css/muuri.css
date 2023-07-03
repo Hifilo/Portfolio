@@ -1,0 +1,137 @@
+.basegrid {
+    position: relative;
+}
+
+.body {
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+.body-contain {
+    /* gap: 10em 0; */
+    display: grid;
+    gap: 10em 10em;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: auto;
+}
+
+.bodygrid {
+    position: relative;
+}
+
+.muuri-grid {
+    position: relative;
+}
+
+.bodygrid video {
+    width: 100%;
+    margin: 3em;
+    padding: 0;
+
+    /* background-color: rgb(52 79 214); */
+
+    /* border: #4fd32a 1px dotted; */
+}
+
+.bodygrid img {
+    width: 100%;
+    margin: 3em;
+    padding: 0;
+
+    /* background-color: rgb(52 79 214); */
+
+    /* border: #4fd32a 1px dotted; */
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: calc(90% / 3);
+    padding: 1em 10px;
+
+    /* max-width: 100%;
+    max-height: 100%; */
+    object-fit: cover;
+    object-position: center;
+    line-height: 200px;
+
+    /* background-color: rgb(200 251 230); */
+
+    /* border: #581845 1px dotted; */
+
+
+    /* box-shadow: var( --box-shadow-2 ); */
+}
+
+.item.muuri-item-dragging {
+    z-index: 3;
+}
+
+.item.muuri-item-releasing {
+    z-index: 2;
+}
+
+.item.muuri-item-hidden {
+    z-index: 0;
+}
+
+.item.muuri-item-positioning {
+    z-index: 4;
+}
+
+.item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    text-align: center;
+
+    /* background-color: rgb(229 251 200); */
+
+    /* border: #cd5eac 1px dotted; */
+    cursor: pointer;
+}
+
+
+/* .item-content > video {
+    position: relative;
+    display: block;
+
+    /~ border-radius: 6px; ~/
+
+    height: max-content;
+
+    /~ box-shadow: var( --box-shadow-2 ); ~/
+    margin: 2em;
+    object-fit: contain;
+} */
+
+
+.video-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    /* background-color: rgb(138 72 210); */
+
+    /* border: #6cec21 1px dotted; */
+}
+
+/* .video-wrapper video {
+    position: absolute;
+} */
+
+.mod-video {
+    position: relative;
+
+    /* Add your cropping styles here */
+    width: 100%; /* adjust the width to your desired crop width */
+    overflow: hidden;
+}
+

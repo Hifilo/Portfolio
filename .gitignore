@@ -254,5 +254,4 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
-content/img/artwork/output1.txt
-content/img/artwork/output2.txt
+

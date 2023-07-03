@@ -35,6 +35,24 @@
     /* box-shadow: 0 2px 8px 0 rgb( 0 0 0 / 15% ); */
 }
 
+.welcome {
+    position: relative;
+    top: calc(100vh/2);
+    display: grid;
+    gap: 25em;
+    align-items: center;
+    justify-content: center;
+    min-height: max-content;
+    padding-top: 10em;
+    background-color: var(--color-style-whitebg);
+    place-items: center;
+}
+
+
+.welcome .splash:last-child {
+    margin-bottom: 15em;
+}
+
 .a-show.splash:nth-of-type(odd) {
     /* transform: translate(25%); */
 }
