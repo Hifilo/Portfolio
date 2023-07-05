@@ -68,7 +68,10 @@ function animateOnScroll() {
 document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll();
 });
+
+// muuri related events
 const items = document.querySelectorAll('.item');
+// this code is to bring muuri items to the top layer on click, and reset them when user clicks off
 
 items.forEach((item) => {
     item.addEventListener('click', (e) => {

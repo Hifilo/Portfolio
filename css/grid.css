@@ -1,0 +1,28 @@
+.image-wrapper img {
+    all: unset;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.grid{
+
+}
+
+.grid-sizer {
+    max-width: 20%;
+}
+
+.grid-item {
+    width: 20%;
+    height: 400px;
+    border: 2px solid hsl(0deg 0% 0% / 50%);
+}
+
+.grid-item-width2 {
+    width: 400px;
+}
+
+.image-wrapper {
+    object-position: center;
+}
+
