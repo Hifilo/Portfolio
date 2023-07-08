@@ -1,8 +1,12 @@
-.bodygrid {
+.muuri-grid {
     position: relative;
 }
 
-.bodygrid video {
+.body-grid {
+    position: relative;
+}
+
+.body-grid video {
     width: 100%;
     margin: 3em;
     padding: 0;
@@ -105,7 +109,7 @@
     position: relative;
 }
 
-.bodygrid img {
+.gallery-grid img {
     width: 100%;
     margin: 3em;
     padding: 0;
