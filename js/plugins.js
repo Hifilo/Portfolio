@@ -63,3 +63,25 @@ let bodyGrid = new Muuri('.bodygrid', {
 });
 
 bodyGrid.refreshItems(true);
+let galleryGrid = new Muuri('.gallery-grid', {
+    layout: {
+        fillGaps: true,
+        horizontal: false,
+        alignRight: false,
+        alignBottom: false,
+        rounding: false,
+    },
+    styles: {
+        // width: '800px',
+        // height: '1200px',
+    },
+    layoutOnResize: 150,
+    layoutOnInit: true,
+    layoutDuration: 300,
+    layoutEasing: 'ease',
+    dragEnabled: true,
+    showDuration: 600,
+    showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+});
+
+galleryGrid.refreshItems(true);
